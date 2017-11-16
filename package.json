@@ -14,8 +14,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "babel-core": "^6.26.0",
     "babel-eslint": "^6.1.2",
-    "babel-loader": "^7.0.0",
+    "babel-loader": "^7.1.2",
     "babel-plugin-syntax-object-rest-spread": "^6.13.0",
     "babel-plugin-transform-class-properties": "^6.10.2",
     "babel-plugin-transform-object-assign": "^6.8.0",

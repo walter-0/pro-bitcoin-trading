@@ -2,6 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Pro Bitcoin Trading | #1 Site to Learn Bitcoin Trading Strategies"
+theme = "blank"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:

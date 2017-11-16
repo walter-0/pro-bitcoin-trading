@@ -54,9 +54,9 @@ gulp.task("server", ["hugo", "css", "js"], () => {
       baseDir: "./dist"
     }
   });
-  watch("./src/js/**/*.js", () => { gulp.start(["js"]) });
-  watch("./src/css/**/*.css", () => { gulp.start(["css"]) });
-  watch("./site/**/*", () => { gulp.start(["hugo"]) });
+  watch("./src/js/**/*.js", () => { gulp.start(["js"]); });
+  watch("./src/css/**/*.css", () => { gulp.start(["css"]); });
+  watch("./site/**/*", () => { gulp.start(["hugo"]); });
 });
 
 /**
