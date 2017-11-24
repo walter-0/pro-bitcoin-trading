@@ -1,0 +1,32 @@
+{{ if isset .Site.Params "carousel" }}
+{{ if .Site.Params.carousel.enable }}
+{{ if gt (len .Site.Data.carousel) 0 }}
+<section class="carousel-section">
+  <div class="home-carousel">
+    <div class="dark-mask"></div>
+    <div class="container">
+      <div class="homepage owl-carousel">
+        {{ range sort .Site.Data.carousel "weight" }}
+        <div class="item">
+          <div class="row">
+            <div class="col-md-7 right">
+              <h1>{{ .title }}</h1>
+              {{ .description | safeHTML }}
+              <a href="#" class="btn btn-success">{{ .cta }}</a>
+              <br class="visible-xs visible-sm">
+              <br class="visible-xs visible-sm">
+            </div>
+            <div class="col-md-5">
+              <img class="img-responsive" src="{{ .image }}" alt="">
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      <!-- /.project owl-slider -->
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
